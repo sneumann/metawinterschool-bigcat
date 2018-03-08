@@ -34,8 +34,16 @@ library(devtools)
 install_github("bridgedb/BridgeDbR")
 ```
 
-### Identifier mapping data
+And, another alternative, use the docker container from https://hub.docker.com/r/bioconductor/devel_metabolomics2/
+which has all package in the BioC View Metabolomics pre-installed. From next week on that should also contain bridgedb.
 
+```
+docker run -it bioconductor/devel_metabolomics2 bash
+```
+or with the built-in rstudio-server in that docker container, see http://bioconductor.org/help/docker/ 
+
+### Identifier mapping data
+http://bioconductor.org/help/docker/
 Besides a toolkit that can do identifier mapping, we actually still need the data that does the identifier
 mapping. The latest metabolite ID mapping database can be
 [downloaded from Figshare](https://figshare.com/articles/Metabolite_BridgeDb_ID_Mapping_Database_20180201_/5845134).
